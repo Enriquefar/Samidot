@@ -1,17 +1,23 @@
-# samidot
+# Mão na Massa
 
-A new Flutter project.
+Aplicativo Flutter de receitas simples para quem está começando na cozinha.
 
-## Getting Started
+## Funcionalidades (até agora)
+- Página principal com boas-vindas, categorias e receitas em destaque (dados provisórios).
+- Campo rotulado "Nome da receita" com botão **Pesquisar** (também funciona pelo Enter do teclado).
+- Consulta vazia ou só com espaços é recusada, sem iniciar pesquisa, com a mensagem:
+  `Digite o nome de uma receita. Ex.: "bolo de cenoura".`
+- Consulta válida: espaços nas pontas são removidos, espaços repetidos viram um só, e o termo é exibido num cartão de feedback. O usuário pode corrigir e pesquisar de novo ou limpar.
 
-This project is a starting point for a Flutter application.
+## Como rodar
+```bash
+flutter pub get
+flutter run
+```
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Estrutura
+```
+lib/
+  main.dart
+  pages/home_page.dart
+```
